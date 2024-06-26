@@ -1,0 +1,161 @@
+
+
+:root {
+    //Main Front Color
+    --min--fa--color:#ffffff;
+
+    //Nav Colors
+    --nav--color: #898d8e;
+    --nav--active: #e9f2f5;
+    --nav--font: #ffffff;
+    --nav--font-sec: #000000;
+    --nav-bg-color: #383838;
+
+    //Head Colors
+    --head--color:#5ec0ee;
+    --bg--color:#ffffff;
+
+    //Language colors
+    --lan--top--back:#f3f3f3;
+    --lan--font--color:#000000;
+    --lan--back:#f6f6f6;
+    --lan-hover:#0387d3;
+
+}
+
+
+.side-panel-r{
+    background: url(https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    height: 120vh;
+    padding: 0;
+    margin: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title-of-dash {
+        border-bottom: var(--nav--active) 1px solid;
+        margin-bottom: 40px;
+
+        h2{
+            color: black;
+            font-weight: 400;
+        }
+
+
+    }
+
+    .container {
+        background: #fffffff2;
+        padding: 2em;
+        border-radius: 10px;
+    }
+
+    .table>thead {
+        vertical-align: bottom;
+        background: #181818;
+        color: white;
+        font-weight: 100 !important;
+    }
+
+    // Navigaton Styles 
+    .navigation-container{
+        padding: 0;
+        margin: 0;
+
+
+        section.nav-section-panel{
+            background: rgb(209 234 245 / 38%);
+            z-index: 9999;
+            position: relative;
+            padding: 0 7em;
+        
+            .logo-img{
+                width: 3%;
+                padding: 10px 0;
+            }
+        
+            .container-fluid{
+                padding-left:20px;
+        
+                .navbar-main-padding{
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    padding: 0 !important;
+                    letter-spacing: 1.5px;
+                    font-weight: 300;
+                    //border-bottom: var(--nav--active) 1px solid;
+                    
+                    .navbar-nav{
+                        
+                        .nav-link {
+                            margin-left: 10px;
+                            padding: 30px 10px;
+                            color: var(--nav--font-sec) !important;
+                            &:hover,:active{
+                                color: var(--nav--font-sec) !important;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .login-out-btn{
+            padding: 5px 30px;
+            border-radius: 5px;
+            background: #ff8473;
+            border: none;
+            color: black;
+            font-weight: 400;
+            width: 10% !important;
+        }
+    }
+
+    .card-img-overlay {
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    .card-body {
+        flex-direction: column;
+        justify-content: center;
+    }  
+}
+
+
+// Appointmnt and all Forms Outer Border Hide
+
+form {
+    border: none !important;
+
+    .form-group {
+        padding: 0 0 20px 0;
+
+        label {
+            color: var(--nav--font-sec);
+            margin-bottom: 10px;
+        }
+    }
+}
+
+section.button-section {
+    padding: 30px 0 0 0;
+
+    .margin-class{
+        margin-left: 25px;
+    }
+}
+
+textarea{
+    width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 5px;
+    height: 150px;
+}
